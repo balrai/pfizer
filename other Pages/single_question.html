@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ASEAN 2019</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/banner_lg.png" alt="medium banner" id="top_banner" />
+      <img src="./images/banner_app.png" alt="Small banner" id="small_banner" />
+    </header>
+
+    <div class="content">
+      <div data-nc-comp="screen-asset" data-screen-asset-type="slidescreen">
+        <div
+          id="forum-post-projector-single"
+          data-nc-comp="forum-post"
+          data-single-post-display
+        ></div>
+      </div>
+    </div>
+    <div class="footbar"></div>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: Calibri;
+        src: url(./fonts/calibri.ttf);
+      }
+      body {
+        background: #fff;
+        font-family: Calibri !important;
+        margin: 0;
+        max-width: 1024px;
+        margin: auto;
+      }
+      .novacast.screen-asset.slide-screen-asset .asset-component {
+        position: relative;
+      }
+      header img {
+        width: 100%;
+        display: block;
+      }
+
+      #small_banner {
+        display: none;
+      }
+
+      .content {
+        max-width: 1024px;
+        height: 74vh;
+        margin: auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        text-align: center;
+      }
+      .novacast.forum-post.projector-single {
+        font-size: 32px;
+        position: relative;
+      }
+      .upper {
+        font-size: 26px;
+        color: #616161;
+        line-height: 1.42;
+        margin-bottom: 15px;
+      }
+      .lower {
+        font-size: 16px;
+        color: #616161;
+        line-height: 2.31;
+      }
+
+      .footbar {
+        width: 1024px;
+        height: 7px;
+        background-color: #1985c0;
+        position: fixed;
+        bottom: 0;
+      }
+
+      @media (max-width: 800px) {
+        #top_box {
+          padding: 0 30px;
+        }
+        .content {
+          padding: 0 30px;
+        }
+      }
+      @media (max-width: 600px) {
+        #top_banner {
+          display: none;
+        }
+        #small_banner {
+          display: block;
+        }
+        #top_box {
+          padding: 0 20px;
+        }
+        .content {
+          padding: 0 20px;
+        }
+        #top_bar {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </body>
+</html>

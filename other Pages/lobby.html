@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ASEAN 2019</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/banner_lg.png" alt="medium banner" id="top_banner" />
+      <img src="./images/banner_app.png" alt="Small banner" id="small_banner" />
+    </header>
+
+    <div class="content">
+      <!-- <div class="date">Date: 3 August (Saturday)</div> -->
+      <div id="title">
+        Overview
+      </div>
+      <div id="subtitle">
+        Please select your meeting track:
+      </div>
+      <div id="list">
+        <a href="./room1">CVD Management Track</a>
+        <div class="bar"></div>
+        <a href="https://novacast.nova.hk/e/L54iWJU/index">Mental Management</a>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: Calibri;
+        src: url(./fonts/calibri.ttf);
+      }
+      body {
+        background: #fff;
+        font-family: Calibri !important;
+        margin: 0;
+        max-width: 1024px;
+        margin: auto;
+      }
+
+      #header-box {
+        max-width: 1024px;
+        margin: auto;
+        display: none;
+      }
+      header img {
+        width: 100%;
+        display: block;
+      }
+
+      #small_banner {
+        display: none;
+      }
+      #top_bar {
+        background-color: #01044b;
+        padding: 15px 0;
+        font-size: 22px;
+      }
+      #top_box {
+        max-width: 1024px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        color: #fff;
+        line-height: 1.18;
+      }
+
+      #tab_bar {
+        display: flex;
+      }
+      #day1 {
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+        background: #9e9e9e;
+        color: #fff;
+        cursor: pointer;
+      }
+      #day2 {
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+        padding: 10px;
+        text-align: center;
+        background: #9e9e9e;
+        color: #fff;
+        cursor: pointer;
+      }
+      #day1.active,
+      #day2.active {
+        background: #7fe5bf;
+      }
+      #back::before {
+        content: "";
+        visibility: visible;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 10px solid #fff;
+      }
+      .content {
+        max-width: 1024px;
+        margin: auto;
+        padding: 0 40px;
+      }
+      .date {
+        margin-top: 25px;
+        text-align: right;
+        color: #2351a3;
+      }
+      #title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #37ade3;
+        letter-spacing: -0.08px;
+      }
+      #subtitle {
+        font-size: 14px;
+        color: #767676;
+        letter-spacing: -0.1px;
+        margin-bottom: 20px;
+      }
+      #list a {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.9px;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        background-color: #8d8d8d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+      #list a:hover {
+        opacity: 0.8;
+      }
+      #list a:active {
+        transform: translateY(1px);
+      }
+      .bar {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        height: 2px;
+        background-color: #eee;
+        border-radius: 1px;
+      }
+
+      @media (max-width: 1250px) {
+        #large_top_banner {
+          display: none;
+        }
+        #header-box {
+          display: block;
+        }
+      }
+      @media (max-width: 800px) {
+        #top_box {
+          padding: 0 30px;
+        }
+        .content {
+          padding: 0 30px;
+        }
+      }
+      @media (max-width: 600px) {
+        #top_banner {
+          display: none;
+        }
+        #small_banner {
+          display: block;
+        }
+        #top_box {
+          padding: 0 20px;
+        }
+        .content {
+          padding: 0 20px;
+        }
+        #top_bar {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </body>
+</html>
